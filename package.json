@@ -1,0 +1,56 @@
+{
+  "name": "quosoptio",
+  "version": "1.0.0",
+  "description": "logs for the frontend",
+  "main": "dist/logline.min.js",
+  "scripts": {
+    "test": "mocha-headless-chrome -f test/index.html",
+    "configure": "gulp configure",
+    "dev": "rollup -c build/rollup.dev.js -w",
+    "build:dev": "rollup -c build/rollup.build.js",
+    "build:prod": "NODE_ENV=production rollup -c build/rollup.build.js",
+    "build": "npm run build:dev && npm run build:prod && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DaynaOberbrunner/quosoptio.git"
+  },
+  "keywords": [
+    "laudantium",
+    "frontend",
+    "js",
+    "nostrum",
+    "maiores",
+    "blanditiis"
+  ],
+  "author": "LaurianeKris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaynaOberbrunner/quosoptio.git/issues"
+  },
+  "homepage": "https://github.com/DaynaOberbrunner/quosoptio.git",
+  "devDependencies": {
+    "babel-core": "^6.7.7",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "chai": "^3.5.0",
+    "colors": "^1.1.2",
+    "fs-extra": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-rename": "^1.2.2",
+    "html-loader": "^0.4.3",
+    "jsonfile": "^2.4.0",
+    "minimist": "^1.2.0",
+    "mocha": "^2.5.3",
+    "mocha-headless-chrome": "^1.7.1",
+    "moment": "^2.13.0",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-license": "^0.2.0",
+    "rollup-plugin-livereload": "^0.6.0",
+    "rollup-plugin-serve": "^0.4.2",
+    "rollup-plugin-uglify": "^1.0.1",
+    "rollup-watch": "^4.3.1"
+  }
+}
